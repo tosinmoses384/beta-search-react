@@ -1,10 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import logo from './logo.svg';
+import BusinessList from './components/BusinessList/BusinessList';
+import SearchBar from './components/SearchBar/SearchBar';
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>makeWeGo</h1>
+        <SearchBar />
+        <BusinessList />
+      </div>
+    );
+  }
+}
+export default App;
+
+
+
+
+
+
+
+
+{/* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +39,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div>*/}
