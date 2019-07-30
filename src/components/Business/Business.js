@@ -1,24 +1,12 @@
 import React from 'react';
 import './Business.css';
 
-
-let business = {
-  imageSrc: 'https://media.api.timbu.com/img/big/1-oak-place-abuja-68370.png',
-  name: 'MarginOtto Pizzeria',
-  address: '1010 Paddington Way',
-  city: 'Flavortown',
-  state: 'NY',
-  zipCode: '10101',
-  category: 'Italian',
-  rating: 4.5,
-  reviewCount: 90
-};
-
 class Business extends React.Component {
     render() {
+      const { business } = this.props;
         return (<div className="Business">
         <div class="image-container">
-          <img src='https://media.api.timbu.com/img/big/1-oak-place-abuja-68370.png' alt=''/>
+          <img src={business.imageSrc} alt=''/>
         </div>
         <h2>{business.name}</h2>
         <div className="Business-information">
