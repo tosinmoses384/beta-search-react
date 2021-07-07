@@ -75,6 +75,15 @@
     background-color: #a7874b;
   }
   
+
+
+  @media only screen and (max-width:768) {
+    .SearchBar-fields input {
+      width: 16rem;
+      }    
+  }
+
+
   @media only screen and (max-width: 560px) {
     .SearchBar {
       background-image: url('./background_search_mobile.jpg');
@@ -95,3 +104,15 @@
       margin-bottom: .86rem;
     }
   }
+
+  @media only screen and (max-width:320) {
+    .SearchBar {
+      background-image: url('./background_search_mobile.jpg');
+    }
+
+    .SearchBar-fields input {
+    width: 16rem;
+    }    
+  }
+
+
